@@ -1,0 +1,31 @@
+/* Section Styles */
+.section{
+  padding: 72px 0;
+}
+
+.eyebrow{
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  color: #9fb6ee;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.section-title{
+  margin: 0 0 10px;
+  font-size: clamp(26px, 4vw, 40px);
+}
+
+.section-body{
+  color: #d8e4ff;
+  max-width: 900px;
+}
+
+/* Scroll entrance animations */
+.fade-up{ opacity: 0; transform: translateY(12px); animation: fadeUp 700ms ease forwards; }
+.fade-up-delay{ opacity: 0; transform: translateY(14px); animation: fadeUp 900ms ease forwards 120ms; }
+.fade-up-more{ opacity: 0; transform: translateY(16px); animation: fadeUp 1000ms ease forwards 220ms; }
+
+@keyframes fadeUp{
+  to{ opacity: 1; transform: translateY(0); }
+}

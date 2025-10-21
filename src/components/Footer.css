@@ -1,0 +1,24 @@
+/* Footer Styles */
+.footer{
+  padding: 28px 0 36px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  background: linear-gradient(to top, rgba(2, 6, 23, 0.6), rgba(2, 6, 23, 0.0));
+}
+
+.footer .muted{ color: #a7b6da; }
+
+.footer-links{ 
+  display: flex; 
+  gap: 16px; 
+}
+
+.footer-links a{
+  color: #dbe7ff;
+  opacity: 0.92;
+  text-decoration: none;
+}
+
+.footer-links a:hover{ 
+  opacity: 1; 
+  text-decoration: underline; 
+}

@@ -1,0 +1,26 @@
+/* Base resets and helpers */
+*{ box-sizing: border-box; }
+html, body, #root{ height: 100%; }
+body{
+  color: #e8eef9;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Button styles that are used globally */
+.btn-primary{
+  background: linear-gradient(180deg, #79c2ff, #4a9fe2);
+  border: 0;
+}
+.btn-primary:hover{ background: linear-gradient(180deg, #8fd0ff, #58aaf0); }
+.btn-outline-light{
+  border-color: rgba(255,255,255,0.6);
+  color: #eaf2ff;
+}
+.btn-outline-light:hover{ background: rgba(255,255,255,0.12); color: #ffffff; }
+
+/* Utility */
+.muted{ color: #a7b6da; }
+
+

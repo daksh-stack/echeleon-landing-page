@@ -1,0 +1,52 @@
+/* Navbar Styles */
+.nav-wrap{
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  padding: 12px 0;
+  transition: background 300ms ease, box-shadow 300ms ease, backdrop-filter 300ms ease;
+}
+
+.nav-blur{
+  background: rgba(3, 8, 20, 0.45);
+  backdrop-filter: blur(10px) saturate(140%);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+.brand{
+  gap: 10px;
+  text-decoration: none;
+}
+
+.brand-mark{
+  width: 28px;
+  height: 28px;
+  filter: drop-shadow(0 0 12px rgba(99, 180, 255, 0.6));
+}
+
+.brand-name{
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  color: #eaf2ff;
+}
+
+.nav-links{
+  display: flex;
+  gap: 18px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a{
+  color: #e6ecff;
+  text-decoration: none;
+  padding: 8px 10px;
+  border-radius: 8px;
+  transition: color 200ms ease, background 200ms ease;
+}
+
+.nav-links a:hover{
+  color: white;
+  background: rgba(255,255,255,0.08);
+}
