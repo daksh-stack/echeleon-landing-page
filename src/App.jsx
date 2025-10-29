@@ -3,7 +3,9 @@ import Navbar from "./components/Navbar.jsx";
 import Hero from "./components/Hero.jsx";
 import Section from "./components/Section.jsx";
 import Footer from "./components/Footer.jsx";
-import FloatingBackground from "./components/FloatingBackground.jsx"
+import FloatingBackground from "./components/FloatingBackground.jsx";
+import SpacePhotoReel from "./components/SpacePhotoReel.jsx";
+
 function App() {
   return (
     <>
@@ -12,34 +14,65 @@ function App() {
         <Navbar />
         <Hero />
         <main>
-          <Section id="about" title="Who We Are" eyebrow="Echeleon Dev Society">
-            Echeleon Dev Society is a student-driven coding community focused on
-            building, learning, and sharing together. We host hands-on
-            workshops, ship open-source projects, and help members level up in
-            web, app, and AI development. Along with
-          </Section>
-          <Section id="events" title="What We Do" eyebrow="Events & Workshops">
-            • Empowering students to succeed in hackathons with all guidance and
-            resources. • Speaker sessions with industry mentors •
-            Beginner-friendly onboarding and study circles • Open-source sprints
-            and hackathons
+          <Section
+            id="about"
+            eyebrow="Echeleon Dev Society"
+            title="Who We Are"
+            index={0}
+          >
+            <p>
+              Echeleon Dev Society is a collective of innovators, dreamers, and
+              developers who believe in turning curiosity into creation. We
+              build open-source projects, host hackathons, and explore how
+              technology can make the impossible — inevitable.
+            </p>
           </Section>
 
-          {/* <Section id="projects" title="Projects" eyebrow="Open Source & Labs">
-            Explore collaborative projects spanning web platforms, design systems, automation tools, and ML experiments. Contribute, learn modern stacks, and ship real features.
-          </Section> */}
+          <Section
+            id="events"
+            eyebrow="Events & Workshops"
+            title="What We Do"
+            index={1}
+          >
+            <p>
+             Hackathons that push imagination. <br />
+             Industry-led sessions from top engineers. <br />
+             Hands-on study circles and onboarding for beginners. <br />
+             Open-source sprints and real-world collaborations.
+            </p>
+          </Section>
 
-          <Section id="join" title="Join The Crew" eyebrow="Get Involved">
-            Ready to build with us? Join us on social platforms, follow
-            announcements, and hop into your first issue. Everyone is
-            welcome—beginners to experts.
+          <Section
+            id="projects"
+            eyebrow="Innovation in Action"
+            title="Our Projects"
+            index={2}
+          >
+            <p>
+              From AI-driven platforms to interactive web systems, every project
+              is a mission. We build tools that enhance learning, creativity, and
+              collaboration — coded with purpose, designed with passion.
+            </p>
+          </Section>
+
+          <Section
+            id="join"
+            eyebrow="Get Involved"
+            title="Join The Crew"
+            index={3}
+          >
+            <p>
+              Ready to explore, build, and lead with us? Join our growing network
+              of passionate creators. Whether you're a beginner or a pro, there’s
+              a place for you at Echeleon.
+            </p>
             <div className="cta-row">
               <a
                 className="btn btn-primary glow-btn"
                 href="https://linktr.ee/EDSCDGI"
                 aria-label="Join our Discord"
               >
-                Join us
+                Join Us
               </a>
 
               <a
@@ -51,6 +84,8 @@ function App() {
               </a>
             </div>
           </Section>
+
+          <SpacePhotoReel />
         </main>
         <Footer />
       </div>
